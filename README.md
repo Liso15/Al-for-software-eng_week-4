@@ -1,0 +1,51 @@
+Breast Cancer Image ClassificationAdd commentMore actions
+This project performs breast cancer image classification using Random Forests on color histogram features extracted from pathology images. The workflow includes data loading, preprocessing, feature extraction, model training, evaluation, and prediction on unseen test images.
+Project Structure:
+
+├── breast_cancer_analysis.ipynb
+├── complete_set/
+│   ├── training_set/
+│   │   ├── benign/
+│   │   └── malignant/
+│   └── testing_set/
+├── test_set_predictions.csv
+└── README.md
+
+## How It Works
+Data Preparation: Loads and labels images as 'benign' (low priority) or 'malignant' (high priority).
+Feature Extraction: Extracts color histograms from each image as features.
+Model Training: Trains a Random Forest classifier to distinguish between benign and malignant images.
+Evaluation: Evaluates the model using accuracy, F1-score, and confusion matrix.
+Prediction: Predicts the class of unseen test images and saves results to test_set_predictions.csv.
+### Requirements
+Python 3.7+
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+pillow
+tqdm
+Install dependencies with:
+pip install numpy pandas scikit-learn matplotlib seaborn pillow tqdm
+## Clone repo
+   git clone https://github.com/Liso15/Al-for-software-eng_week-4.git
+   cd Al-for-software-eng_week-4
+
+## Run the notebook:
+Open breast_cancer_analysis.ipynb in Jupyter Notebook or JupyterLab and run all cells.
+Results:
+Model evaluation metrics and confusion matrix will be displayed in the notebook.
+Predictions for the test set are saved in test_set_predictions.csv.
+
+## Project Highlights
+Accuracy: ~83% on the validation set.
+Features: Simple color histograms.
+Model: Random Forest Classifier.
+Next Steps: Try advanced features (deep learning, texture analysis), use mask data, or tune hyperparameters.
+License.
+
+## Analyst
+Liso Mlunguza
+Email: lisomlunguza8@gmail.com
+This project is for educational purposes.
